@@ -1,0 +1,104 @@
+---
+- hosts: all
+  become: true
+  vars:
+    default_container_name: app-php
+    default_container_image: php:8.2.0RC3-apache
+
+  tasks:
+    - name: Install packages
+      apt:
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+        state: latest
+        update_cache: true
+
+    - name: Add Docker apt Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Update apt and install docker-ce
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: true
+
+    - name: restart docker daemon
+      service:
+        name: docker
+        state: restarted
+
+    - name: Pull default Docker image
+      community.docker.docker_image:
+        name: "{{ default_container_image }}"
+        source: pull
+
+    - name: Create default containers
+      community.docker.docker_container:
+        name: "{{ default_container_name }}"
+        image: "{{ default_container_image }}"
+        ports: 
+          - "80:80"
+        state: present
+    
+    - name: Simple GET operation
+      amazon.aws.aws_s3:
+        bucket: mybucket
+        object: wy-a4f84a230c77/ok.jpg
+        dest: /tmp
+        mode: get
+
+    - name: Create config foo (from a file on the target machine)
+      community.docker.docker_config:
+        name: phptest
+        data_src: /var/www/index.html
+        state: present
+
+    - name: Create config foo (from a file on the target machine)
+      community.docker.docker_config:
+        name: phptest
+        data_src: /var/www/html/index.html
+        state: present
+    
+
+    - name: Copy from S3 bucket
+      community.docker.docker_container_exec:
+        container: phps3
+        command: /bin/bash -c "docker cp ok.jpg"
+        chdir: /var/www/html
+      register: result
+
+    - name: Print stdout
+      debug:
+        var: result.stdout
+
+    - name: Copy index.html file
+      community.docker.docker_container_exec:
+        container: phptest
+        command: /bin/bash -c "docker cp index.html"
+        chdir: /var/www/html
+      register: result
+
+    - name: Print stdout
+      debug:
+        var: result.stdout
+
+    - name: Copy php file
+      community.docker.docker_container_exec:
+        container: phptest
+        command: /bin/bash -c "docker cp test.php"
+        chdir: /var/www/html
+      register: result
+
+    - name: Print stdout
+      debug:
+        var: result.stdout
