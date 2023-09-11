@@ -1,9 +1,51 @@
-<mxfile host="app.diagrams.net" modified="2023-09-11T11:20:11.717Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.1" etag="UZX7c60dDS2GuADWjvoj" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-11T11:36:33.756Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="RT1g7MXw9tCZ38eJVal6" version="21.7.1" type="github">
   <diagram name="Página-1" id="TD3UC1gxRgC4CrVnh2Rm">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-1" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-2" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-4" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-5" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-6" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-7" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-8" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="280" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-9" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="110" y="100" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-10" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-11" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="230" y="380" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-12" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="482.5" width="135" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-13" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="195" y="600" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-14" value="" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="280" y="760" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6mrxB-c_qmbISeZ87xG-15" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=0;right=0;fillColor=none;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="195" y="720" width="140" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
